@@ -1,4 +1,4 @@
-
+//Declaramos las operaciones en una función
 function operacions(op) {
 
     const ops = {

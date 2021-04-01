@@ -23,7 +23,7 @@ function operacions(op) {
     let valor1 = document.getElementById("valor1").value;
     let valor2 = document.getElementById("valor2").value;
 
-    //Comprobamos si se ha introducido números en las cajas
+    //Comprobamos si se han introducido números en las cajas
     if (isNaN(parseFloat(document.getElementById('valor1').value))) {
         document.getElementById('resultado').innerHTML = "<span style='color: red;'>Por favor, escriba un número 1</span>";
         document.getElementById("valor1").innerText = "0";
@@ -34,7 +34,7 @@ function operacions(op) {
         document.getElementById("valor2").focus();
     }
     else {
-        //Si se han introducido los números en ámbas cajas, operamos:
+        //Si se han introducido los números en ambas cajas, operamos:
         switch (op) {
             case 'sumar':
                 var resultado = ops.sumar(valor1, valor2);
